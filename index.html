@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Responsive Web Page</title>
+    <link rel = "website icon" href="mitwpu.png">
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Internal CSS for additional styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Bootstrap navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">My Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main content container -->
+    <div class="container">
+        <!-- Jumbotron -->
+        <div class="jumbotron">
+            <h1>Welcome to Our Website</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <!-- Course Enrollment Form -->
+        <h2>Course Enrollment</h2>
+        <form>
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <label for="courses">Select Course</label>
+                <select class="form-control" id="courses">
+                    <option>FSD</option>
+                    <option>AIES</option>
+                    <option>PE</option>
+                    <option>ICS</option>
+                    <option>DEC</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Enroll</button>
+        </form>
+
+        <!-- Image -->
+        <img src="mitwpu.png" alt="mitwpu" class="img-fluid mt-3" />
+
+        <!-- List -->
+        <h2>Benefits of Our Courses</h2>
+        <ul class="custom-list">
+            <li>High-quality education</li>
+            <li>Experienced instructors</li>
+            <li>Flexible schedules</li>
+        </ul>
+    </div>
+
+    <!-- Link to Bootstrap JavaScript and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
